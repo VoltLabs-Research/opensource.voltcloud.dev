@@ -1,0 +1,49 @@
+---
+import Button from "./Button.astro";
+---
+
+<div class="welcome-container">
+    <div class="welcome-top">
+        <h3 class="welcome-title">
+            The platform for modern <br>
+            materials research
+        </h3>
+
+        <p class="welcome-desc">
+            VOLT is an AI-powered collaborative platform that provides state-of-the-art algorithms 
+            to analyze simulations at any scale and real-time productivity tools for scientific publishing.
+        </p>
+    </div>
+
+    <div class="welcome-bottom">
+        <Button title="Get Started for Free!" />
+    </div>
+</div>
+
+<style>
+    .welcome-container{
+        height: 100%;
+        width: 100%;
+        width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .welcome-top{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .welcome-title{
+        font-size: 3rem;
+    }
+
+    .welcome-desc{
+        font-size: 1.5rem;
+    }
+</style>
